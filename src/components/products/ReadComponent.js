@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProduct } from "../api/ProductAPI";
+import { getProduct } from "../../api/ProductAPI";
 
 const initState = {
 	pno:0,

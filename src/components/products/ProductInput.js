@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { postProduct } from "../api/ProductAPI";
+import { postProduct } from "../../api/ProductAPI";
 
 const initState = {
     title: '',
