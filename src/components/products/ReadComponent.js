@@ -9,7 +9,7 @@ const initState = {
 	images:[]
 }
 
-const ReadComponent = ({pno}) => {
+const ReadComponent = ({pno, moveList, moveModify}) => {
 
     const [product, setProduct] = useState(initState)
 
@@ -30,6 +30,13 @@ const ReadComponent = ({pno}) => {
             </div>
             <div className="m-2 p-2 border-2">
                 {product.price}
+            </div>
+
+            <div>
+                <button className="bg-orange-300 border-2 m-2 p-2 text-white font-bold"
+                    onClick={() => moveModify(product.pno)}>MODIFY</button>
+                <button className="bg-blue-200 border-2 m-2 p-2 text-white font-bold"
+                    onClick={moveList}>LIST</button>
             </div>
         </div>
     );
