@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductInput from './components/products/ProductInput';
+import ModifyPage from './pages/products/ModifyPage';
+import ModifyComponent from './components/products/ModifyComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ProductInput></ProductInput>
+    <div>
+        <ProductInput></ProductInput>
+        <ModifyComponent></ModifyComponent>
+    </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
