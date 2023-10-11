@@ -1,5 +1,6 @@
+import { createSlice } from "@reduxjs/toolkit"
 
-const countSlice = ({
+const countSlice = createSlice({
     name: "CountSlice",
     initialState: {num: 5},     // 상태로 관리해야 할 데이터의 초기 상태
     reducers: {
@@ -17,4 +18,4 @@ const countSlice = ({
 })
 
 export const {inc, dec} = countSlice.actions    // inc, dec는 액션 함수
-export default countSlice.reducers
+export default countSlice.reducer

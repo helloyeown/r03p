@@ -10,14 +10,14 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { RouterProvider } from 'react-router-dom';
 import router from './routers/root';
+import CountButtons from './components/counter/CountButtons';
+import CountDisplay from './components/counter/CountDisplay';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-        <RouterProvider router={router}>
-            <ProductInput></ProductInput>
-            <ModifyComponent></ModifyComponent>
-        </RouterProvider>
+            <CountButtons></CountButtons>
+            <CountDisplay></CountDisplay>
     </Provider>
 );
 
