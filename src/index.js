@@ -12,13 +12,11 @@ import { RouterProvider } from 'react-router-dom';
 import router from './routers/root';
 import CountButtons from './components/counter/CountButtons';
 import CountDisplay from './components/counter/CountDisplay';
+import KakaoLoginComponent from './components/kakao/KakaoLoginComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store}>
-            <CountButtons></CountButtons>
-            <CountDisplay></CountDisplay>
-    </Provider>
+    <KakaoLoginComponent></KakaoLoginComponent>
 );
 
 // If you want to start measuring performance in your app, pass a function
